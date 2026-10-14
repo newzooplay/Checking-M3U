@@ -1,11 +1,10 @@
-
-name: Test M3U Playlist
+name: M3U8 Stream Checker and Playlist Creator
 
 on:
   workflow_dispatch:
     inputs:
       playlist_url:
-        description: "M3U playlist URL"
+        description: "Enter your source M3U playlist URL"
         required: true
         type: string
 
@@ -13,7 +12,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: m3u-check
+  group: m3u8-stream-checker
   cancel-in-progress: false
 
 jobs:
@@ -24,20 +23,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          ref: ${{ github.ref_name }}
 
-      - name: Install FFmpeg and IPTV Checker
+      - name: Install FFmpeg
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
-          npm install -g iptv-checker
-          npm install iptv-checker
+          ffprobe -version
 
-      - name: Download playlist
+      - name: Download source playlist
         env:
           PLAYLIST_URL: ${{ inputs.playlist_url }}
         run: |
@@ -50,14 +45,14 @@ jobs:
           parsed = urlparse(url)
 
           if parsed.scheme not in ("http", "https") or not parsed.netloc:
-              raise SystemExit("Invalid HTTP(S) playlist URL")
+              raise SystemExit("Invalid HTTP/HTTPS playlist URL")
 
-          request = urllib.request.Request(
+          req = urllib.request.Request(
               url,
-              headers={"User-Agent": "M3U-Checker/1.0"}
+              headers={"User-Agent": "Mozilla/5.0"}
           )
 
-          with urllib.request.urlopen(request, timeout=30) as response:
+          with urllib.request.urlopen(req, timeout=30) as response:
               data = response.read(10 * 1024 * 1024 + 1)
 
           if len(data) > 10 * 1024 * 1024:
@@ -65,102 +60,182 @@ jobs:
 
           content = data.decode("utf-8-sig", errors="replace")
 
-          if "#EXTM3U" not in content[:4096]:
-              raise SystemExit("Not an M3U playlist")
+          if not any(
+              line.strip() == "#EXTM3U"
+              for line in content.splitlines()[:10]
+          ):
+              raise SystemExit("Invalid M3U playlist")
 
-          with open("source.m3u", "w", encoding="utf-8") as file:
-              file.write(content)
+          with open("source.m3u", "w", encoding="utf-8") as f:
+              f.write(content)
+
+          print("Source playlist downloaded successfully")
           PY
 
-      - name: Run IPTV Checker
+      - name: Check streams and create working M3U8 playlist
         run: |
-          mkdir -p checker-output
-          iptv-checker source.m3u \
-            --output checker-output \
-            --timeout 120000 \
-            --parallel 5 \
-            --retry 1
+          cat > check_m3u.py <<'PY'
+          import subprocess
+          from urllib.parse import urlparse
+          from datetime import datetime, timezone
 
-      - name: Export working M3U8 links to JSON
-        run: |
-          node --input-type=module <<'JS'
-          import fs from 'node:fs';
-          import { IPTVChecker } from 'iptv-checker';
+          MAX_LINKS = 1000
+          TIMEOUT_SECONDS = 25
 
-          const checker = new IPTVChecker({
-            timeout: 120000,
-            parallel: 5,
-            retry: 1
-          });
+          def is_http_url(url):
+              p = urlparse(url)
+              return p.scheme in ("http", "https") and bool(p.netloc)
 
-          const result = await checker.checkPlaylist('source.m3u');
-          const items = result.items || [];
+          def is_m3u8_url(url):
+              return urlparse(url).path.lower().endswith(".m3u8")
 
-          const seen = new Set();
-          const links = [];
+          # Parse playlist entries while preserving original EXTINF metadata.
+          entries = []
+          extinf = None
+          extras = []
+          seen = set()
 
-          for (const item of items) {
-            const url = item.url || '';
+          with open("source.m3u", encoding="utf-8-sig") as f:
+              for raw in f:
+                  line = raw.strip()
 
-            if (!/\.m3u8(?:$|[?#])/i.test(url)) continue;
-            if (item.status?.ok !== true) continue;
-            if (seen.has(url)) continue;
+                  if not line:
+                      continue
 
-            seen.add(url);
+                  if line.startswith("#EXTINF:"):
+                      extinf = line
+                      extras = []
+                      continue
 
-            links.push({
-              name: item.name || '',
-              tvg_id: item.tvg?.id || '',
-              logo: item.tvg?.logo || '',
-              group: item.group?.title || '',
-              url,
-              status: 'working',
-              format: item.status?.metadata?.format?.format_name || '',
-              streams: (item.status?.metadata?.streams || []).map(s => ({
-                type: s.codec_type || '',
-                codec: s.codec_name || '',
-                width: s.width || null,
-                height: s.height || null
-              }))
-            });
-          }
+                  if line.startswith("#"):
+                      if extinf is not None:
+                          extras.append(line)
+                      continue
 
-          const output = {
-            source: 'source.m3u',
-            checked_at: new Date().toISOString(),
-            total_entries: items.length,
-            working_m3u8_count: links.length,
-            links
-          };
+                  if not is_http_url(line):
+                      extinf = None
+                      extras = []
+                      continue
 
-          fs.writeFileSync(
-            'working_links.json',
-            JSON.stringify(output, null, 2) + '\n'
-          );
+                  if not is_m3u8_url(line):
+                      extinf = None
+                      extras = []
+                      continue
 
-          console.log(`Entries checked: ${items.length}`);
-          console.log(`Working M3U8: ${links.length}`);
-          JS
+                  if line in seen:
+                      extinf = None
+                      extras = []
+                      continue
 
-      - name: Upload report
+                  seen.add(line)
+
+                  entries.append({
+                      "extinf": extinf or (
+                          '#EXTINF:-1,' + urlparse(line).netloc
+                      ),
+                      "extras": list(extras),
+                      "url": line
+                  })
+
+                  extinf = None
+                  extras = []
+
+          if len(entries) > MAX_LINKS:
+              raise SystemExit(
+                  f"Found {len(entries)} links; limit is {MAX_LINKS}"
+              )
+
+          print(f"Found {len(entries)} unique M3U8 URLs")
+
+          working = []
+          failed = 0
+
+          for index, entry in enumerate(entries, 1):
+              url = entry["url"]
+              label = entry["extinf"].split(",", 1)[-1]
+              print(f"[{index}/{len(entries)}] Checking {label}")
+
+              command = [
+                  "ffprobe",
+                  "-v", "error",
+                  "-rw_timeout", "15000000",
+                  "-analyzeduration", "5000000",
+                  "-probesize", "5000000",
+                  "-read_intervals", "%+8",
+                  "-show_entries", "stream=codec_type,codec_name",
+                  "-of", "default=noprint_wrappers=1",
+                  url
+              ]
+
+              try:
+                  result = subprocess.run(
+                      command,
+                      capture_output=True,
+                      text=True,
+                      timeout=TIMEOUT_SECONDS
+                  )
+
+                  output = result.stdout.strip()
+
+                  # A stream must expose at least one media stream.
+                  if result.returncode == 0 and "codec_type=" in output:
+                      working.append(entry)
+                      print("  OK")
+                  else:
+                      failed += 1
+                      print("  FAIL")
+
+              except subprocess.TimeoutExpired:
+                  failed += 1
+                  print("  FAIL: timeout")
+
+              except Exception as exc:
+                  failed += 1
+                  print(f"  FAIL: {type(exc).__name__}")
+
+          # Always create a valid M3U playlist, even if no links work.
+          with open("working.m3u8", "w", encoding="utf-8") as f:
+              f.write("#EXTM3U\n")
+
+              for entry in working:
+                  f.write(entry["extinf"] + "\n")
+
+                  for extra in entry["extras"]:
+                      f.write(extra + "\n")
+
+                  f.write(entry["url"] + "\n")
+
+          print("")
+          print("===== SUMMARY =====")
+          print("Total:", len(entries))
+          print("Working:", len(working))
+          print("Failed:", failed)
+          print("Output: working.m3u8")
+          print("Checked at:", datetime.now(timezone.utc).isoformat())
+          PY
+
+          python check_m3u.py
+
+      - name: Upload working M3U8 playlist
+        if: always() && hashFiles('working.m3u8') != ''
         uses: actions/upload-artifact@v4
         with:
-          name: m3u-check-report
-          path: |
-            working_links.json
-            checker-output/
+          name: working-m3u8-playlist
+          path: working.m3u8
+          if-no-files-found: warn
+          retention-days: 14
 
-      - name: Commit and push JSON
+      - name: Commit and push working playlist
         run: |
           git config user.name "github-actions[bot]"
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add working_links.json
+          git add working.m3u8
 
           if git diff --cached --quiet; then
-            echo "No JSON changes."
+            echo "No changes to commit"
           else
-            git commit -m "Update working M3U8 links"
+            git commit -m "Update working M3U8 playlist"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
