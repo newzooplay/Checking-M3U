@@ -1,0 +1,1117 @@
+{
+  "source": "source.m3u",
+  "checked_at": "2026-10-14T08:10:50.856640+00:00",
+  "total_found": 132,
+  "working_count": 20,
+  "failed_count": 112,
+  "links": [
+    {
+      "name": "Star Sports 1 HD",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "http://41.205.93.154/STARSPORTS1/index.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:06:21.052545+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "type": "audio",
+          "codec": "eac3",
+          "width": null,
+          "height": null
+        }
+      ]
+    },
+    {
+      "name": "Redbull TV",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:06:54.146820+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        },
+        {
+          "type": "data",
+          "codec": "timed_id3",
+          "width": null,
+          "height": null
+        }
+      ]
+    },
+    {
+      "name": "BeiN Sports Extra",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "https://bein-esp-xumo.amagi.tv/playlistR720P.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:06:54.747428+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        },
+        {
+          "type": "data",
+          "codec": "scte_35",
+          "width": null,
+          "height": null
+        }
+      ]
+    },
+    {
+      "name": "Turkmenistan Sport 🇹🇲",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "https://alpha.tv.online.tm/legacyhls/ch004_720/index.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:07:28.496573+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 720,
+          "height": 406
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        }
+      ]
+    },
+    {
+      "name": "Turkmenistan Sport 🇹🇲",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "http://217.174.225.146/legacyhls/ch004_720/index.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:07:30.340068+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 720,
+          "height": 406
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        }
+      ]
+    },
+    {
+      "name": "S SPORT 1 🇹🇷",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "http://umka625.megogo.xyz/iptv/Z463DXTQ5XKBFL/19070/index.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:07:31.562079+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "name": "S SPORT 2 🇹🇷",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "http://umka625.megogo.xyz/iptv/Z463DXTQ5XKBFL/19071/index.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:07:32.696344+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "name": "MEGOGO Спорт 2 HD 🇺🇦",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "http://eqatmiyg.megogo.xyz/iptv/EBUCGK992DRF6L/20103/index.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:08:27.315236+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "name": "REAL MADRID TV 🇪🇸",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:08:42.937970+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        }
+      ]
+    },
+    {
+      "name": "BEIN SPORT EXTRA Ñ 🇪🇸",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:08:43.579411+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        },
+        {
+          "type": "data",
+          "codec": "scte_35",
+          "width": null,
+          "height": null
+        }
+      ]
+    },
+    {
+      "name": "TELECOSTA GUATEMALA 🇬🇹",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "https://tv91.hostingnuclear.com:19360/telecosta/telecosta.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:08:44.792251+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        }
+      ]
+    },
+    {
+      "name": "TELEMUNDO 🇲🇽",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:08:51.324470+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        },
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        },
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 960,
+          "height": 540
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        },
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 640,
+          "height": 360
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        },
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 426,
+          "height": 240
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        }
+      ]
+    },
+    {
+      "name": "Viju+ Sport 🇷🇺",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "https://stream1.cinerama.uz/1229/tracks-v1a1/mono.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:09:12.446588+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        },
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "name": "SPORT RU 🇷🇺",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "http://streaming.astrakhan.ru/astrakhanrusporthd/tracks-v3a1/index.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:09:22.273622+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        },
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 854,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "name": "X SPORT 🇷🇺",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "http://iptv.prosto.tv:7000/ch109/video.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:09:23.816048+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        },
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "name": "Turkmenistan Sport 🇹🇲",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "http://217.174.225.146/hls/ch004_720/index.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:09:26.028254+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 720,
+          "height": 406
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        }
+      ]
+    },
+    {
+      "name": "UZ SPORT 🇺🇿",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "https://stream1.cinerama.uz/1004/index.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:09:32.421539+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        }
+      ]
+    },
+    {
+      "name": "INFOSPORT 🇫🇷",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "http://212.102.60.80/Infosport/index.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:09:36.193695+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        }
+      ]
+    },
+    {
+      "name": "TELETRAK 🇨🇱",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "http://unlimited6-cl.dps.live/sportinghd/sportinghd.smil/playlist.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:10:31.403777+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        },
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 854,
+          "height": 480
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        },
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 426,
+          "height": 240
+        },
+        {
+          "type": "audio",
+          "codec": "aac",
+          "width": null,
+          "height": null
+        }
+      ]
+    },
+    {
+      "name": "TRT 1 🇹🇷",
+      "tvg_id": "",
+      "logo": "",
+      "group": "",
+      "url": "https://helga.iptv2022.com/sh/trt_1/index.m3u8",
+      "status": "working",
+      "checked_at": "2026-10-14T08:10:44.798835+00:00",
+      "format": "hls",
+      "streams": [
+        {
+          "type": "video",
+          "codec": "h264",
+          "width": 1280,
+          "height": 720
+        }
+      ]
+    }
+  ],
+  "failed_links": [
+    {
+      "name": "T10 A sports Live",
+      "url": "https://webott.viatv.com.np/v0t1/ASportsHD.stream/playlist.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "RTA Sports HD Ban Vs AFG",
+      "url": "https://rtatv.akamaized.net/Content/HLS/Live/channel(RTA3)/variant.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TnT Sports 2 🇧🇩",
+      "url": "https://line.4k-beast.co/live/c0:23:8d:96:15:22/44D11F/103145.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "PTV Sports",
+      "url": "http://125.209.88.166:45793/BRN/PTVSports.stream/playlist.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "A Sports",
+      "url": "http://125.209.88.166:45793/BRN/ArySports.stream/playlist.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Geo Super",
+      "url": "http://125.209.88.166:45793/BRN/GeoSuper.stream/playlist.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Ten Sports PK",
+      "url": "http://125.209.88.166:45793/BRN/TenSports.stream/playlist.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Bein Sports 1",
+      "url": "http://125.209.88.166:45793/BRN/beINSP11.stream/playlist.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Bein Sports 2",
+      "url": "http://125.209.88.166:45793/BRN/beINSP12.stream/playlist.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "MU TV",
+      "url": "https://bcovlive-a.akamaihd.net/r2d2c4ca5bf57456fb1d16255c1a535c8/eu-west-1/eu-west-1/6058004203001/profile_2/chunklist.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "MU TV",
+      "url": "https://bcovlive-a.akamaihd.net/r6b4170ad9e8e4ed49986ecc03bac588b/eu-west-1/6058004203001/playlist.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TnT Sports 3",
+      "url": "https://line.4k-beast.co/live/c0:23:8d:96:15:22/44D11F/103148.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Fast-Studios-Womens-Sports",
+      "url": "https://csm-e-eb.csm.tubi.video/csm/extlive/tubiprd01,Fast-Studios-Womens-Sports.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "GXR WORLD 🇮🇳",
+      "url": "https://s@d2yxu0gr4ksneg.cloudfront.net/out/v1/ed259f6465634f6382767e23f564e695/index_7.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Live Sports Football Laliga",
+      "url": "https://drjpy7suzu4c5.cloudfront.net/out/v1/0c06db0274c04e64ab6ae0450f5fbda8/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TYC Sports Play",
+      "url": "https://d1xm2jznwi5xzj.cloudfront.net/out/v1/34e0da501a8c4489b713809eb08a9bf3/index_14.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "GXR WORLD 🇮🇳",
+      "url": "https://drjpy7suzu4c5.cloudfront.net/out/v1/0c06db0274c04e64ab6ae0450f5fbda8/index_6.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "GXR WORLD 🇮🇳",
+      "url": "https://db7g5t2s3y0c9.cloudfront.net/out/v1/1c7f5a41c9934f24916b7ce5d1ea381e/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "GXR WORLD 🇮🇳",
+      "url": "https://s@db7g5t2s3y0c9.cloudfront.net:443/out/v1/1c7f5a41c9934f24916b7ce5d1ea381e/index_7.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "GXR WORLD 🇮🇳",
+      "url": "https://s@drjpy7suzu4c5.cloudfront.net:443/out/v1/0c06db0274c04e64ab6ae0450f5fbda8/index_7.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "GXR WORLD 🇮🇳",
+      "url": "https://s@dz6knuujo9z7i.cloudfront.net:443/out/v1/a54d9b3234aa4b61a2d1f475bfad6a58/index_8.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "GXR WORLD 🇮🇳",
+      "url": "https://s@d2yxu0gr4ksneg.cloudfront.net:443/out/v1/ed259f6465634f6382767e23f564e695/index_7.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "GXR WORLD 🇮🇳",
+      "url": "https://s@d1c63sglopbuo.cloudfront.net:443/out/v1/b9b23c4adf414582af2f2b480bbefddc/index_7.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Ten Sports 2 HD",
+      "url": "https://edge4-moblive.yuppcdn.net/trans1sd/smil:tensports2.smil/playlist.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "МАТЧ! Футбол2 🇷🇺",
+      "url": "http://194.26.229.213/matc-futbol-2/index.m3u8?token=Panda",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "S LALIGA 🇿🇦",
+      "url": "https://zylotech.xyz/live/1/chunks.m3u8?bongls.com",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Bein Sports 1 France 🇫🇷",
+      "url": "http://51.178.65.238/BeinSport/mono.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "ESPN DEPORTES 🇺🇸",
+      "url": "http://190.92.10.66:4000/play/a003/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Setanta Sports 2 🇷🇺",
+      "url": "https://stream2.cinerama.uz/1264/tracks-v1a1/mono.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Setanta Sports 1 🇷🇺",
+      "url": "https://stream2.cinerama.uz/1263/tracks-v1a1/mono.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "SKY SPORTS LALIGA 🇲🇽",
+      "url": "http://181.78.105.146:2000/play/a08m/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "SKY SPORTS LALIGA 🇲🇽",
+      "url": "http://190.92.10.66:4000/play/a001/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "SKY SPORTS LALIGA 🇲🇽",
+      "url": "http://181.78.109.49:8000/play/a06r/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "SPORTV + 🇵🇹",
+      "url": "http://176.65.146.108:8022/play/a07t/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "SPORTV2 🇵🇹",
+      "url": "http://176.65.146.108:8022/play/a06i/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Bein Sports 🇬🇧",
+      "url": "http://fl2.moveonjoy.com/BEIN_SPORTS/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "ARENA PREMIUM LIGA 🇷🇸",
+      "url": "http://91.132.74.4:7374/play/a00k/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Arena Sport 1 🇷🇸",
+      "url": "http://109.105.201.198/ARENASPORT1/video.m3u8?token=test",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Arena Sport 3 🇷🇸",
+      "url": "http://109.105.201.198/ARENASPORT3/video.m3u8?token=test",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Arena Sport 4 🇷🇸",
+      "url": "http://109.105.201.198/ARENASPORT4/video.m3u8?token=test",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Футбол 1 HD 🇷🇺",
+      "url": "http://194.26.229.213/matc-futbol-1/index.m3u8?token=Panda",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Fast Sports 🇦🇲",
+      "url": "http://stream01.vnet.am/Channel_131/mono.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Setanta Sports 1 🇷🇺",
+      "url": "http://82.215.111.227/1263/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Setanta Sports 2 🇷🇺",
+      "url": "http://82.215.111.227/1264/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Megogo Sports 1 🇺🇦",
+      "url": "http://158.101.214.187:8080/channel/n112aece8/index.m3u8?q=b8633cb8eb71b49cb814d6ae70ae0c27",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Беларусь 5 (HD) 🇧🇾",
+      "url": "http://93.189.224.246:52900/play/a005/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TV1 🇪🇸",
+      "url": "https://rtvelivestream.akamaized.net/rtvesec/la1/la1_main_dvr.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TV1 🇪🇸",
+      "url": "https://rtvelivestream.akamaized.net/rtvesec/la1/la1_main_720.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "EUROSPORT 1 🇪🇸",
+      "url": "http://185.189.225.157/EuroSport1/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "EUROSPORT 2 🇪🇸",
+      "url": "http://185.189.225.157/EuroSport2/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "BEIN SPORT EXTRA Ñ 🇪🇸",
+      "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bein-sports-xtra-en-espanol/playlist.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "ESPN VIVO 🇦🇷",
+      "url": "http://hzcdn.vood.top:80/hls/309458_.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TIGO SPORTS 🇨🇷",
+      "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=7357",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TUDN 🇲🇽",
+      "url": "http://181.78.105.146:2000/play/a08j/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "ITV DEPORTES 🇲🇽",
+      "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=3010",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TSN 1 🇨🇦",
+      "url": "http://212.102.60.231/TSN_1/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TSN 2 🇨🇦",
+      "url": "http://212.102.60.231/TSN_2/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TSN 3 🇨🇦",
+      "url": "http://212.102.60.231/TSN_3/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TSN 4 🇨🇦",
+      "url": "http://212.102.60.231/TSN_4/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TSN 5 🇨🇦",
+      "url": "http://212.102.60.231/TSN_5/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "CBS SPORT 🇺🇸",
+      "url": "https://fl2.moveonjoy.com/CBS_SPORTS_NETWORK/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "FS 1 SPORT 🇺🇸",
+      "url": "http://212.102.60.10/FOX_Sports_1/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "FS 1 SPORT 🇺🇸",
+      "url": "http://fl2.moveonjoy.com/FOX_Sports_1/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "NOVA Sport 1 🇨🇿",
+      "url": "http://78.130.250.2:8023/play/a009/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "NOVA Sport 1 🇨🇿",
+      "url": "http://78.130.250.2:8023/play/a02k/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "NOVA Sport 2 🇨🇿",
+      "url": "http://78.130.250.2:8023/play/a004/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "NovaSports 2 🇨🇿",
+      "url": "http://146.59.85.40:89/novasport2/mono.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "SPORT 1 🇨🇿",
+      "url": "https://ts0-pl.tv.itself.cz/hls/master/live.m3u8?channel=727&device=2b6073bc96d57891dc6410d6ab150035&stream_profiles=profile11,profile12,profile13&changed_at=1726643016",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "SPORT 2 🇨🇿",
+      "url": "https://ts0-pl.tv.itself.cz/hls/master/live.m3u8?channel=729&device=2b6073bc96d57891dc6410d6ab150035&stream_profiles=profile11,profile12,profile13&changed_at=1726643016",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "ARENA Sport 1 🇨🇿",
+      "url": "http://78.130.250.2:8023/play/a02o/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "RTVS Sport 🇨🇿",
+      "url": "https://ts0-pl.tv.itself.cz/hls/master/live.m3u8?channel=2120&device=2b6073bc96d57891dc6410d6ab150035&stream_profiles=profile11,profile12,profile13&changed_at=172664301",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "JOJ Sport 🇨🇿",
+      "url": "https://ts0-pl.tv.itself.cz/hls/master/live.m3u8?channel=2164&device=2b6073bc96d57891dc6410d6ab150035&stream_profiles=profile11,profile12,profile13&changed_at=172664301",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Sport5 🇮🇱",
+      "url": "https://rgelive.akamaized.net/hls/live/2043151/radiolive/playlist.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Матч! Планета 🇷🇺",
+      "url": "https://stream1.cinerama.uz/1049/tracks-v1a1/mono.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "ТЕЛЕКАНАЛ ФУТБОЛ 🇷🇺",
+      "url": "http://iptv-hls.idc.md:8200/hls/77/live1.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "SPORTS TV 🇹🇷",
+      "url": "http://live.sportstv.com.tr/hls/low/sportstv_fhd/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "L'Equipe Live 1 🇫🇷",
+      "url": "https://jmp2.uk/sam-FRBC4200004XH.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "L'Equipe Live 2 🇫🇷",
+      "url": "https://jmp2.uk/sam-FRBC4200005X2.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Scooore 🇩🇪",
+      "url": "https://jmp2.uk/sam-ATBD26000124P.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "GXR 🇮🇳",
+      "url": "https://s@d1yz7zmm8mka3t.cloudfront.net:443/out/v1/cad8af14714e4affa48e07d2f48ebf5f/index_7.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "GXR 🇮🇳",
+      "url": "https://s@dx12yig2oz0vp.cloudfront.net:443/out/v1/48bb590edb2f4bcd91e0ab46950bf94a/index_5.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "SPOTV 🇲🇾",
+      "url": "https://cdn09jtedge.indihometv.com/joss/133/beib1/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "SPOTV 2 🇲🇾",
+      "url": "https://cdn09jtedge.indihometv.com/joss/133/beib2/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "WOW TV EL SALVADOR 🇸🇻",
+      "url": "https://cdn.elsalvadordigital.com:1936/wowtv/smil:wowtv.smil/playlist.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Sport A 🇨🇳",
+      "url": "http://37.27.111.214:8080/live/13/hls.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Sport B 🇨🇳",
+      "url": "http://37.27.111.214:8080/live/14/hls.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Sport C 🇨🇳",
+      "url": "http://37.27.111.214:8080/live/15/hls.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "ATG1 🇸🇪",
+      "url": "https://httpcache0-00688-cacheliveedge0.dna.qbrick.com/00688-cacheliveedge0/out/u/atg_sdi_1_free_3.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TENNIS",
+      "url": "https://d3qg0hadt0dkov.cloudfront.net/amgtennisus/playlist1080_p.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TENNIS",
+      "url": "https://d3qg0hadt0dkov.cloudfront.net:443/amgtennisus/playlist1080_p.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Bien sport 3 🇶🇦",
+      "url": "http://www.teledunet.com:8080/tdn/tdn/456489.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "ELEVEN SPORTS 3 HD 🇵🇹",
+      "url": "http://kstv.us:8080/live/jgarcia31/224178522/48445.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "S CHAMPIONS 🇿🇦",
+      "url": "https://cloudserve.world/live/stream_6.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "LIVE 1 🇪🇺",
+      "url": "https://cheapmdhal.lol/live/1/chunks.m3u8?bongls.com",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "LIVE 2 🇪🇺",
+      "url": "https://cheapmdhal.lol/live/2/chunks.m3u8?bongls.com",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "LIVE 3 🇪🇺",
+      "url": "https://cheapmdhal.lol/live/3/chunks.m3u8?bongls.com",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "LIVE 4 🇪🇺",
+      "url": "https://cheapmdhal.lol/live/4/chunks.m3u8?bongls.com",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "LIVE 5 🇪🇺",
+      "url": "https://cheapmdhal.lol/live/5/chunks.m3u8?bongls.com",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "LIVE 6 🇪🇺",
+      "url": "https://cheapmdhal.lol/live/6/chunks.m3u8?bongls.com",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "LIVE 7 🇪🇺",
+      "url": "https://cheapmdhal.lol/live/7/chunks.m3u8?bongls.com",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Bien sport 1 🇶🇦",
+      "url": "http://www.teledunet.com:8080/tdn/tdn/456487.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "ELEVEN 1 🇵🇹",
+      "url": "http://kstv.us:8080/live/jgarcia31/224178522/48443.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TNT SPORT 4 🇬🇧",
+      "url": "http://109.61.81.147:2080/cdn2/5054/video.m3u8?token=4444",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "ELEVEN 4 🇵🇹",
+      "url": "http://kstv.us:8080/live/jgarcia31/224178522/48446.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TUDN USA 🇺🇸",
+      "url": "https://848b3516657c-usatv.baby-beamup.club/public/m3u/66.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "FOX SPORT 🇦🇷",
+      "url": "http://181.78.27.128:8000/play/a062/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "CBS SPORT 🇺🇸",
+      "url": "https://848b3516657c-usatv.baby-beamup.club/public/m3u/308.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TNT SPORT 1 🇬🇧",
+      "url": "http://109.61.81.147:2080/cdn2/559/video.m3u8?token=4444",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TNT SPORT 2 🇬🇧",
+      "url": "http://109.61.81.147:2080/cdn2/560/video.m3u8?token=4444",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "TNT SPORT 3 🇬🇧",
+      "url": "http://109.61.81.147:2080/cdn2/295/video.m3u8?token=4444",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "ESPN 🇦🇷",
+      "url": "http://168.227.131.66:8000/play/tfc0/index.m3u8",
+      "reason": "FFprobe could not read stream"
+    },
+    {
+      "name": "Real Madrid TV 🇪🇸",
+      "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=1545",
+      "reason": "FFprobe could not read stream"
+    }
+  ]
+}
